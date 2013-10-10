@@ -1,0 +1,1135 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Loom SDK: View Class Reference</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="../../../../css/class-page.css">
+        <link rel="stylesheet" href="../../../../css/pygments.css">
+        <link rel="stylesheet" href="../../../../css/all-pages.css">
+        <link rel="stylesheet" href="../../../../css/jquery-ui-1.10.3.custom.css" />
+        <link type="text/css" rel="stylesheet" href="../../../../css/jquery.dropdown.css" />
+    </head>
+    <body>
+
+        <div id="top">&nbsp;</div>
+        <!-- Header. -->
+<header class="site-header">
+    <div class="site-header__logo">
+        <div class="site-header__logo__version">1.0.1</div>
+    </div>
+    <ul class="site-header__nav breadcrumb">
+          <li><a class='is-perm' href='../../../../index.html'>API Reference</a><li><a class='is-perm' href='../../../../org/index.html'>org</a><li><a class='is-perm' href='../../../../org/puremvc/index.html'>puremvc</a><li><a class='is-perm' href='../../../../org/puremvc/loomsdk/index.html'>loomsdk</a><li><a class='is-perm' href='../../../../org/puremvc/loomsdk/core/index.html'>core</a><li>View
+    </ul>
+    <div id="site-header__search" class="site-header__search" data-dropdown="#results-dropdown">
+        <input type="text"><button><span class="down-arrow"></span><span class="text">Search all</span></button>
+        <div class="options">
+            <div class="options__option options__option--selected" name="search-all">Search all</div>
+        </div>
+    </div>
+    <div id="results-dropdown" class="dropdown dropdown-tip dropdown-relative">
+        <ul class="dropdown-menu">
+        </ul>
+    </div>
+</header><!-- End header. -->
+          
+          
+
+        <!-- Page. -->
+        <div class="page">
+
+            <!-- Page nav. -->
+<nav class="page-nav">
+    <h4 class="page-nav__title">View</h4>
+    <ul id="page-nav__list" class="page-nav__list">
+    </ul>
+</nav><!-- End page nav. -->
+
+            <!-- Content. -->
+            <div class="content">
+
+                <!-- Content header. -->
+                <header class="content-header">
+
+                    <!-- Class name. -->
+                    <h1>View</h1>
+                    
+                    
+
+                    <!-- Class categorization and path. -->
+                    <p>
+                        <strong>public class</strong>
+                        <br>
+                        <a href='../../../../org/index.html'>org</a>.<a href='../../../../org/puremvc/index.html'>puremvc</a>.<a href='../../../../org/puremvc/loomsdk/index.html'>loomsdk</a>.<a href='../../../../org/puremvc/loomsdk/core/index.html'>core</a>.<a href='../../../../org/puremvc/loomsdk/core/View.html'>View</a>
+                    </p>
+                    
+                    <!-- Metadata. -->
+<div class="content-header__metadata">
+
+    <!-- Inheritance chain. -->
+    <p>
+        <span class="is-light">Inheritance</span>
+        <br>
+        
+    </p>
+
+    <!-- Implemented interfaces. -->
+    
+    <p>
+        <span class="is-light">Implements</span>
+        <br>
+        
+            <a href="../../../../org/puremvc/loomsdk/interfaces/IView.html">IView</a>
+        
+    </p>
+    
+
+    <!-- Subclasses. -->
+    
+
+</div><!-- End metadata. -->
+
+                </header><!-- End content header. -->
+
+                
+                    <!-- Description section. -->
+                    <section id="description" name="Description" class="content-section">
+
+                        <h2>Description</h2>
+                        <p><p>A Singleton IView implementation.</p>
+
+<p>In PureMVC, the View class assumes these responsibilities:
+
+Maintain a cache of IMediator instances.
+Provide methods for registering, retrieving, and removing IMediators.
+Notifiying IMediators when they are registered or removed.
+Managing the observer lists for each INotification in the application.
+Providing a method for attaching IObservers to an INotification&#39;s observer list.
+Providing a method for broadcasting an INotification.
+Notifying the IObservers of a given INotification when it broadcast.
+</p>
+
+<p>See also:<br>
+<a href="../../../../org/puremvc/loomsdk/patterns/mediator/Mediator.html">org.puremvc.loomsdk.patterns.mediator.Mediator</a>   Mediator
+<a href="../../../../org/puremvc/loomsdk/patterns/observer/Observer.html">org.puremvc.loomsdk.patterns.observer.Observer</a>   Observer
+<a href="../../../../org/puremvc/loomsdk/patterns/observer/Notification.html">org.puremvc.loomsdk.patterns.observer.Notification</a>   Notification</p>
+</p>
+
+                    </section><!-- End description section. -->
+                
+
+                <!-- API overview section. -->
+<section id="api-overview" name="API overview" class="content-section">
+
+    <h2>API overview</h2>
+
+    <!-- Constructor. -->
+    <h3><a href="#constructor">Constructor</a></h3>
+    <p><a href="#constructor"><strong>View</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+()
+    <br>
+    <span class="is-light">Constructor</span></p>
+
+    
+    <!-- Attributes. -->
+    <div>
+
+        <h3><a href="#attributes">Attributes</a></h3>
+
+        
+
+        
+        <!-- Protected attributes. -->
+        <!-- Title. -->
+        <div class="overview-box__header--twirlable" data-twirl="#overview-protected-attributes">
+            <div class="overview-box__twirl twirl-down"></div><h4 class="overview-box__title is-inline">Protected attributes</h4>
+            
+        </div>
+        <!-- Table. -->
+        <table class="overview-box__table" id="overview-protected-attributes" style="display:none;">
+            <tbody>
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#attribute-instance"><strong>instance</strong></a>: <a href='../../../../org/puremvc/loomsdk/interfaces/IView.html'>IView</a> 
+        </td>
+        <td class="overview-box__description-col">
+            
+            <span class="special-property">static </span>
+            
+            
+            
+            
+        </td>
+    </tr>
+
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#attribute-mediatorMap"><strong>mediatorMap</strong></a>: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Dictionary.html'>Dictionary</a>.&#60;<a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>, <a href='../../../../org/puremvc/loomsdk/interfaces/IMediator.html'>IMediator</a>&#62;  
+        </td>
+        <td class="overview-box__description-col">
+            
+            
+            
+            
+            
+            
+        </td>
+    </tr>
+
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#attribute-observerMap"><strong>observerMap</strong></a>: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Dictionary.html'>Dictionary</a>.&#60;<a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>, <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Vector.html'>Vector</a>.&#60;<a href='../../../../org/puremvc/loomsdk/interfaces/IObserver.html'>IObserver</a>&#62; &#62;  
+        </td>
+        <td class="overview-box__description-col">
+            
+            
+            
+            
+            
+            
+        </td>
+    </tr>
+
+            
+            </tbody>
+        </table>
+        <!-- End protected attributes. -->
+        
+
+    </div><!-- End attributes. -->
+    
+
+    
+    <!-- Constants. -->
+    <div>
+    
+        <h3><a href="#constants">Constants</a></h3>
+
+        <!-- Title. -->
+        <div class="overview-box__header">
+            <h4 class="overview-box__title">Constants</h4>
+            
+        </div>
+        <!-- List. -->
+        <table class="overview-box__table" id="overview-constants">
+            <tbody>
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#attribute-SINGLETON_MSG"><strong>SINGLETON_MSG</strong></a>: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a> 
+        </td>
+        <td class="overview-box__description-col">
+            
+            
+            
+            
+            
+            
+        </td>
+    </tr>
+
+            
+            </tbody>
+        </table>
+
+    </div><!-- End constants. -->
+    
+
+    
+    <!-- Functions. -->
+    <div>
+
+        <h3><a href="#functions">Functions</a></h3>
+
+        
+        <!-- Public functions. -->
+        <!-- Title. -->
+        <div class="overview-box__header">
+            <h4 class="overview-box__title">Public functions</h4>
+            
+        </div>
+        <!-- Table. -->
+        <table class="overview-box__table" id="overview-public-functions">
+            <tbody>
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#function-getInstance"><strong>getInstance</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(): <a href='../../../../org/puremvc/loomsdk/interfaces/IView.html'>IView</a>
+        </td>
+        <td class="overview-box__description-col">
+            <span class="special-property">static </span><p>View Singleton Factory method
+        </td>
+    </tr>
+
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#function-hasMediator"><strong>hasMediator</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  mediatorName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Boolean.html'>Boolean</a>
+        </td>
+        <td class="overview-box__description-col">
+            <p>Check if a Mediator is registered or not</p>
+        </td>
+    </tr>
+
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#function-notifyObservers"><strong>notifyObservers</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  notification: <a href='../../../../org/puremvc/loomsdk/interfaces/INotification.html'>INotification</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+        </td>
+        <td class="overview-box__description-col">
+            <p>Notify the IObservers for a particular INotification
+        </td>
+    </tr>
+
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#function-registerMediator"><strong>registerMediator</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  mediator: <a href='../../../../org/puremvc/loomsdk/interfaces/IMediator.html'>IMediator</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+        </td>
+        <td class="overview-box__description-col">
+            <p>Register an IMediator instance with the View
+        </td>
+    </tr>
+
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#function-registerObserver"><strong>registerObserver</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  notificationName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+  
+  , 
+
+  
+  observer: <a href='../../../../org/puremvc/loomsdk/interfaces/IObserver.html'>IObserver</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+        </td>
+        <td class="overview-box__description-col">
+            <p>Register an IObserver to be notified
+of INotifications with a given name
+        </td>
+    </tr>
+
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#function-removeMediator"><strong>removeMediator</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  mediatorName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+  
+   
+): <a href='../../../../org/puremvc/loomsdk/interfaces/IMediator.html'>IMediator</a>
+        </td>
+        <td class="overview-box__description-col">
+            <p>Remove an IMediator from the View
+        </td>
+    </tr>
+
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#function-removeObserver"><strong>removeObserver</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  notificationName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+  
+  , 
+
+  
+  notifyContext: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+        </td>
+        <td class="overview-box__description-col">
+            <p>Remove the observer for a given notifyContext from an observer list for a given Notification name
+        </td>
+    </tr>
+
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#function-retrieveMediator"><strong>retrieveMediator</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  mediatorName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+  
+   
+): <a href='../../../../org/puremvc/loomsdk/interfaces/IMediator.html'>IMediator</a>
+        </td>
+        <td class="overview-box__description-col">
+            <p>Retrieve an IMediator from the View
+        </td>
+    </tr>
+
+            
+            </tbody>
+        </table>
+        <!-- End public functions. -->
+        
+
+        
+        <!-- Protected functions. -->
+        <!-- Title. -->
+        <div class="overview-box__header--twirlable" data-twirl="#overview-protected-functions">
+            <div class="overview-box__twirl twirl-down"></div><h4 class="overview-box__title is-inline">Protected functions</h4>
+            
+        </div>
+        <!-- Table. -->
+        <table class="overview-box__table" id="overview-protected-functions" style="display:none;">
+            <tbody>
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#function-initializeView"><strong>initializeView</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+        </td>
+        <td class="overview-box__description-col">
+            <p>Initialize the Singleton View instance
+        </td>
+    </tr>
+
+            
+            </tbody>
+        </table>
+        <!-- End protected functions. -->
+        
+
+    </div><!-- End functions. -->
+    
+    
+    
+
+</section><!-- End API overview section. -->
+
+                <!-- Constructor section. -->
+                <section id="constructor" name="Constructor" class="content-section">
+
+                    <h2>Constructor</h2>
+
+                    <div class="content-section__inner">
+                        <p class="content-subsection"><strong>View</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+()</p>
+                        <p>Constructor. 
+
+<P>
+This <code>IView</code> implementation is a Singleton, 
+so you should not call the constructor 
+directly, but instead call the static Singleton 
+Factory method <code>View.getInstance()</code>
+Debug assert will fail if Singleton instance has already been constructed
+</p>
+                    </div>
+
+                </section><!-- End constructor section. -->
+
+                <!-- Attributes section. -->
+
+<section id="attributes" name="Attributes" class="content-section">
+
+    <!-- Title. -->
+    <h2>Attributes</h2>
+    
+    
+
+    
+    <!-- Protected. -->
+
+    <!-- Title. -->
+    <div class="content-section__subheader" data-twirl="#protected-attributes">
+        <div class="content-section__subheader__twirl twirl-down"></div><h3 class="content-section__subheader__title">Protected attributes</h3>
+    </div>
+
+
+    <div class="content-section__inner">
+        <!-- List. -->
+        <div id="protected-attributes" class="protected-subsection__body" style="display:none;">
+            
+               <div class="content-subsection" id="attribute-instance">
+  <p><strong>instance</strong>: <a href='../../../../org/puremvc/loomsdk/interfaces/IView.html'>IView</a>
+    
+    
+  </p>
+  <p>
+    
+    <span class="special-property">static </span>
+    
+    
+    
+    </p>
+</div>
+            
+               <div class="content-subsection" id="attribute-mediatorMap">
+  <p><strong>mediatorMap</strong>: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Dictionary.html'>Dictionary</a>.&#60;<a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>, <a href='../../../../org/puremvc/loomsdk/interfaces/IMediator.html'>IMediator</a>&#62; 
+    
+    
+  </p>
+  <p>
+    
+    
+    
+    
+    
+    </p>
+</div>
+            
+               <div class="content-subsection" id="attribute-observerMap">
+  <p><strong>observerMap</strong>: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Dictionary.html'>Dictionary</a>.&#60;<a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>, <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Vector.html'>Vector</a>.&#60;<a href='../../../../org/puremvc/loomsdk/interfaces/IObserver.html'>IObserver</a>&#62; &#62; 
+    
+    
+  </p>
+  <p>
+    
+    
+    
+    
+    
+    </p>
+</div>
+            
+        </div>
+
+    </div><!-- End protected. -->
+    
+
+</section><!-- End attributes section. -->
+
+
+                <!-- Attributes section. -->
+
+<section id="constants" name="Constants" class="content-section">
+
+    <!-- Title. -->
+    <h2>Constants</h2>
+    
+    <div class="content-section__inner">
+    
+        <!-- Public list. -->
+        
+            <div class="content-subsection" id="constant-SINGLETON_MSG">
+  <p><strong>SINGLETON_MSG</strong>: <a href="http://docs.theengine.co/loom/1.1.2738/api/system/String.html">String</a></p>
+  <p></p>
+</div>
+        
+
+    </div>
+
+</section><!-- End attributes section. -->
+
+
+                <!-- Functions section. -->
+
+<section id="functions" name="Functions" class="content-section">
+
+    <!-- Title. -->
+    <h2>Functions</h2>
+
+    
+    <div class="content-section__inner">
+
+        <!-- Public list. -->
+        
+            <div class="content-subsection" id="function-getInstance">
+    <p><strong>getInstance</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(): <a href='../../../../org/puremvc/loomsdk/interfaces/IView.html'>IView</a>
+      
+      
+    </p>
+    <p><span class="special-property">static </span><p>View Singleton Factory method.</p>
+</p>
+    
+    
+    
+    <br/>
+    
+    
+      <!-- Title. -->
+      <div class="overview-box__header">
+          <h4 class="overview-box__title">Returns</h4>
+      </div>
+      <!-- List. -->
+      <table class="overview-box__table" id="overview-returns">
+          <tbody>
+            <tr>
+              <td class="overview-box__name-col">
+                  <a href='../../../../org/puremvc/loomsdk/interfaces/IView.html'><strong>IView</strong></a>
+              </td>
+              <td class="overview-box__description-col">
+                the Singleton instance of <code>View</code>
+              </td>
+            </tr>
+          </tbody>
+      </table>
+    
+    
+    <br/>
+</div>
+        
+            <div class="content-subsection" id="function-hasMediator">
+    <p><strong>hasMediator</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  mediatorName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Boolean.html'>Boolean</a>
+      
+      
+    </p>
+    <p><p>Check if a Mediator is registered or not</p>
+</p>
+    
+    
+      <!-- Title. -->
+      <div class="overview-box__header">
+          <h4 class="overview-box__title">Parameters</h4>
+      </div>
+      <!-- List. -->
+      <table class="overview-box__table" id="overview-returns">
+          <tbody>
+            
+              <tr>
+                <td class="overview-box__name-col">
+                    mediatorName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+                    
+                </td>
+                <td class="overview-box__description-col">
+                  @return whether a Mediator is registered with the given <code>mediatorName</code>.
+                </td>
+              </tr>
+            
+          </tbody>
+      </table>
+    
+    
+    <br/>
+    
+    
+      <!-- Title. -->
+      <div class="overview-box__header">
+          <h4 class="overview-box__title">Returns</h4>
+      </div>
+      <!-- List. -->
+      <table class="overview-box__table" id="overview-returns">
+          <tbody>
+            <tr>
+              <td class="overview-box__name-col">
+                  <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Boolean.html'><strong>Boolean</strong></a>
+              </td>
+              <td class="overview-box__description-col">
+                whether a Mediator is registered with the given <code>mediatorName</code>.
+              </td>
+            </tr>
+          </tbody>
+      </table>
+    
+    
+    <br/>
+</div>
+        
+            <div class="content-subsection" id="function-notifyObservers">
+    <p><strong>notifyObservers</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  notification: <a href='../../../../org/puremvc/loomsdk/interfaces/INotification.html'>INotification</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+      
+      
+    </p>
+    <p><p>Notify the IObservers for a particular INotification.</p>
+
+<p>All previously attached IObservers for this INotification&#39;s
+list are notified and are passed a reference to the INotification in 
+the order in which they were registered.</p>
+</p>
+    
+    
+      <!-- Title. -->
+      <div class="overview-box__header">
+          <h4 class="overview-box__title">Parameters</h4>
+      </div>
+      <!-- List. -->
+      <table class="overview-box__table" id="overview-returns">
+          <tbody>
+            
+              <tr>
+                <td class="overview-box__name-col">
+                    notification: <a href='../../../../org/puremvc/loomsdk/interfaces/INotification.html'>INotification</a>
+                    
+                </td>
+                <td class="overview-box__description-col">
+                  the <code>INotification</code> to notify <code>IObservers</code> of.
+                </td>
+              </tr>
+            
+          </tbody>
+      </table>
+    
+    
+    <br/>
+    
+    
+    
+    <br/>
+</div>
+        
+            <div class="content-subsection" id="function-registerMediator">
+    <p><strong>registerMediator</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  mediator: <a href='../../../../org/puremvc/loomsdk/interfaces/IMediator.html'>IMediator</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+      
+      
+    </p>
+    <p><p>Register an IMediator instance with the View.</p>
+
+<p>Registers the IMediator so that it can be retrieved by name,
+and further interrogates the IMediator for its 
+INotification interests.
+
+If the IMediator returns any INotification 
+names to be notified about, an Observer is created encapsulating 
+the IMediator instance&#39;s handleNotification method 
+and registering it as an Observer for all INotifications the 
+IMediator is interested in.</p>
+</p>
+    
+    
+      <!-- Title. -->
+      <div class="overview-box__header">
+          <h4 class="overview-box__title">Parameters</h4>
+      </div>
+      <!-- List. -->
+      <table class="overview-box__table" id="overview-returns">
+          <tbody>
+            
+              <tr>
+                <td class="overview-box__name-col">
+                    mediator: <a href='../../../../org/puremvc/loomsdk/interfaces/IMediator.html'>IMediator</a>
+                    
+                </td>
+                <td class="overview-box__description-col">
+                  a reference to the <code>IMediator</code> instance
+                </td>
+              </tr>
+            
+          </tbody>
+      </table>
+    
+    
+    <br/>
+    
+    
+    
+    <br/>
+</div>
+        
+            <div class="content-subsection" id="function-registerObserver">
+    <p><strong>registerObserver</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  notificationName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+  
+  , 
+
+  
+  observer: <a href='../../../../org/puremvc/loomsdk/interfaces/IObserver.html'>IObserver</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+      
+      
+    </p>
+    <p><p>Register an IObserver to be notified
+of INotifications with a given name.</p>
+</p>
+    
+    
+      <!-- Title. -->
+      <div class="overview-box__header">
+          <h4 class="overview-box__title">Parameters</h4>
+      </div>
+      <!-- List. -->
+      <table class="overview-box__table" id="overview-returns">
+          <tbody>
+            
+              <tr>
+                <td class="overview-box__name-col">
+                    notificationName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+                    
+                </td>
+                <td class="overview-box__description-col">
+                  the name of the <code>INotifications</code> to notify this <code>IObserver</code> of
+                </td>
+              </tr>
+            
+              <tr>
+                <td class="overview-box__name-col">
+                    observer: <a href='../../../../org/puremvc/loomsdk/interfaces/IObserver.html'>IObserver</a>
+                    
+                </td>
+                <td class="overview-box__description-col">
+                  the <code>IObserver</code> to register
+                </td>
+              </tr>
+            
+          </tbody>
+      </table>
+    
+    
+    <br/>
+    
+    
+    
+    <br/>
+</div>
+        
+            <div class="content-subsection" id="function-removeMediator">
+    <p><strong>removeMediator</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  mediatorName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+  
+   
+): <a href='../../../../org/puremvc/loomsdk/interfaces/IMediator.html'>IMediator</a>
+      
+      
+    </p>
+    <p><p>Remove an IMediator from the View.</p>
+</p>
+    
+    
+      <!-- Title. -->
+      <div class="overview-box__header">
+          <h4 class="overview-box__title">Parameters</h4>
+      </div>
+      <!-- List. -->
+      <table class="overview-box__table" id="overview-returns">
+          <tbody>
+            
+              <tr>
+                <td class="overview-box__name-col">
+                    mediatorName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+                    
+                </td>
+                <td class="overview-box__description-col">
+                  name of the <code>IMediator</code> instance to be removed.
+                </td>
+              </tr>
+            
+          </tbody>
+      </table>
+    
+    
+    <br/>
+    
+    
+      <!-- Title. -->
+      <div class="overview-box__header">
+          <h4 class="overview-box__title">Returns</h4>
+      </div>
+      <!-- List. -->
+      <table class="overview-box__table" id="overview-returns">
+          <tbody>
+            <tr>
+              <td class="overview-box__name-col">
+                  <a href='../../../../org/puremvc/loomsdk/interfaces/IMediator.html'><strong>IMediator</strong></a>
+              </td>
+              <td class="overview-box__description-col">
+                the <code>IMediator</code> that was removed from the <code>View</code>
+              </td>
+            </tr>
+          </tbody>
+      </table>
+    
+    
+    <br/>
+</div>
+        
+            <div class="content-subsection" id="function-removeObserver">
+    <p><strong>removeObserver</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  notificationName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+  
+  , 
+
+  
+  notifyContext: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+      
+      
+    </p>
+    <p><p>Remove the observer for a given notifyContext from an observer list for a given Notification name.
+</p>
+</p>
+    
+    
+      <!-- Title. -->
+      <div class="overview-box__header">
+          <h4 class="overview-box__title">Parameters</h4>
+      </div>
+      <!-- List. -->
+      <table class="overview-box__table" id="overview-returns">
+          <tbody>
+            
+              <tr>
+                <td class="overview-box__name-col">
+                    notificationName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+                    
+                </td>
+                <td class="overview-box__description-col">
+                  which observer list to remove from 
+                </td>
+              </tr>
+            
+              <tr>
+                <td class="overview-box__name-col">
+                    notifyContext: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+                    
+                </td>
+                <td class="overview-box__description-col">
+                  remove the observer with this object as its notifyContext
+                </td>
+              </tr>
+            
+          </tbody>
+      </table>
+    
+    
+    <br/>
+    
+    
+    
+    <br/>
+</div>
+        
+            <div class="content-subsection" id="function-retrieveMediator">
+    <p><strong>retrieveMediator</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  mediatorName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+  
+   
+): <a href='../../../../org/puremvc/loomsdk/interfaces/IMediator.html'>IMediator</a>
+      
+      
+    </p>
+    <p><p>Retrieve an IMediator from the View.</p>
+</p>
+    
+    
+      <!-- Title. -->
+      <div class="overview-box__header">
+          <h4 class="overview-box__title">Parameters</h4>
+      </div>
+      <!-- List. -->
+      <table class="overview-box__table" id="overview-returns">
+          <tbody>
+            
+              <tr>
+                <td class="overview-box__name-col">
+                    mediatorName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+                    
+                </td>
+                <td class="overview-box__description-col">
+                  the name of the <code>IMediator</code> instance to retrieve.
+                </td>
+              </tr>
+            
+          </tbody>
+      </table>
+    
+    
+    <br/>
+    
+    
+      <!-- Title. -->
+      <div class="overview-box__header">
+          <h4 class="overview-box__title">Returns</h4>
+      </div>
+      <!-- List. -->
+      <table class="overview-box__table" id="overview-returns">
+          <tbody>
+            <tr>
+              <td class="overview-box__name-col">
+                  <a href='../../../../org/puremvc/loomsdk/interfaces/IMediator.html'><strong>IMediator</strong></a>
+              </td>
+              <td class="overview-box__description-col">
+                the <code>IMediator</code> instance previously registered with the given <code>mediatorName</code>.
+              </td>
+            </tr>
+          </tbody>
+      </table>
+    
+    
+    <br/>
+</div>
+        
+
+    </div>
+    
+
+    
+    <!-- Protected. -->
+
+    <!-- Title. -->
+    <div class="content-section__subheader" data-twirl="#protected-functions">
+        <div class="content-section__subheader__twirl twirl-down"></div><h3 class="content-section__subheader__title">Protected functions</h3>
+    </div>
+
+    <div class="content-section__inner">
+        <!-- List. -->
+        <div id="protected-functions" class="protected-subsection__body" style="display:none;">
+            
+                <div class="content-subsection" id="function-initializeView">
+    <p><strong>initializeView</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+      
+      
+    </p>
+    <p><p>Initialize the Singleton View instance.</p>
+
+<p>Called automatically by the constructor, this
+is your opportunity to initialize the Singleton
+instance in your subclass without overriding the
+constructor.</p>
+</p>
+    
+    
+    
+    <br/>
+    
+    
+      <!-- Title. -->
+      <div class="overview-box__header">
+          <h4 class="overview-box__title">Returns</h4>
+      </div>
+      <!-- List. -->
+      <table class="overview-box__table" id="overview-returns">
+          <tbody>
+            <tr>
+              <td class="overview-box__name-col">
+                  <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'><strong>Void</strong></a>
+              </td>
+              <td class="overview-box__description-col">
+                void
+              </td>
+            </tr>
+          </tbody>
+      </table>
+    
+    
+    <br/>
+</div>
+            
+        </div>
+
+    </div><!-- End protected. -->
+    
+
+</section><!-- End functions section. -->
+
+                
+                <!-- Functions section. -->
+
+
+            </div><!-- End content. -->
+
+        </div><!-- End page. -->
+
+        <script type="text/javascript" src="../../../../js/vendor/fuse.min.js"></script>
+<script type="text/javascript" src="../../../../js/vendor/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="../../../../js/vendor/jquery.easing.min.js"></script>
+<script type="text/javascript" src="../../../../js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="../../../../js/vendor/underscore-min.js"></script>
+<script type="text/javascript" src="../../../../js/authored/onscroll.js"></script>
+<script type="text/javascript" src="../../../../js/authored/table-of-contents.js"></script>
+<script type="text/javascript" src="../../../../js/authored/inherited-properties.js"></script>
+<script type="text/javascript" src="../../../../js/authored/twirldowns.js"></script>
+<script type="text/javascript" src="../../../../js/authored/id-link-intercept.js"></script>
+
+<script type="text/javascript">
+  $(function() {
+    $( document ).tooltip();
+  });
+  </script>
+  
+<script type="text/javascript">
+
+  var relative_base = "../../../../..";
+  var search_objects = $.parseJSON('{"classes":[{"path":"api.org.puremvc.loomsdk.core.Controller","name":"Controller"},{"path":"api.org.puremvc.loomsdk.patterns.facade.Facade","name":"Facade"},{"path":"api.org.puremvc.loomsdk.interfaces.ICommand","name":"ICommand"},{"path":"api.org.puremvc.loomsdk.interfaces.IController","name":"IController"},{"path":"api.org.puremvc.loomsdk.interfaces.IFacade","name":"IFacade"},{"path":"api.org.puremvc.loomsdk.interfaces.IMediator","name":"IMediator"},{"path":"api.org.puremvc.loomsdk.interfaces.IModel","name":"IModel"},{"path":"api.org.puremvc.loomsdk.interfaces.INotification","name":"INotification"},{"path":"api.org.puremvc.loomsdk.interfaces.INotifier","name":"INotifier"},{"path":"api.org.puremvc.loomsdk.interfaces.IObserver","name":"IObserver"},{"path":"api.org.puremvc.loomsdk.interfaces.IProxy","name":"IProxy"},{"path":"api.org.puremvc.loomsdk.interfaces.IView","name":"IView"},{"path":"api.org.puremvc.loomsdk.patterns.command.MacroCommand","name":"MacroCommand"},{"path":"api.org.puremvc.loomsdk.patterns.mediator.Mediator","name":"Mediator"},{"path":"api.org.puremvc.loomsdk.core.Model","name":"Model"},{"path":"api.org.puremvc.loomsdk.patterns.observer.Notification","name":"Notification"},{"path":"api.org.puremvc.loomsdk.patterns.observer.Notifier","name":"Notifier"},{"path":"api.org.puremvc.loomsdk.patterns.observer.Observer","name":"Observer"},{"path":"api.org.puremvc.loomsdk.patterns.proxy.Proxy","name":"Proxy"},{"path":"api.org.puremvc.loomsdk.patterns.command.SimpleCommand","name":"SimpleCommand"},{"path":"api.org.puremvc.loomsdk.core.View","name":"View"}],"examples":[],"guides":[]}');
+
+	var sidebarData = [
+	    { "name" : "Guides", "link" : [] },
+	    { "name" : "Examples", "link" : [] },
+	    { "name" : "API reference", "link" : "../../../../index.html" }
+	];
+
+  // populate examples links
+	for(var index in search_objects.examples)
+	{
+	  example = search_objects.examples[index]
+	  sidebarData[1].link.push({"name": example.name, "link": relative_base + "/" + example.path.split(".").join("/") + ".html"});
+	}
+	
+	// populate guides links
+	sidebarData[0].link = $.parseJSON('[]');
+	
+</script>
+
+
+<script type="text/javascript" src="../../../../js/vendor/jquery.dropdown.js"></script>
+<script type="text/javascript" src="../../../../js/authored/search.js"></script>    
+    </body>
+</html>
