@@ -1,0 +1,785 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Loom SDK: Proxy Class Reference</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="../../../../../css/class-page.css">
+        <link rel="stylesheet" href="../../../../../css/pygments.css">
+        <link rel="stylesheet" href="../../../../../css/all-pages.css">
+        <link rel="stylesheet" href="../../../../../css/jquery-ui-1.10.3.custom.css" />
+        <link type="text/css" rel="stylesheet" href="../../../../../css/jquery.dropdown.css" />
+    </head>
+    <body>
+
+        <div id="top">&nbsp;</div>
+        <!-- Header. -->
+<header class="site-header">
+    <div class="site-header__logo">
+        <div class="site-header__logo__version">1.0.1</div>
+    </div>
+    <ul class="site-header__nav breadcrumb">
+          <li><a class='is-perm' href='../../../../../index.html'>API Reference</a><li><a class='is-perm' href='../../../../../org/index.html'>org</a><li><a class='is-perm' href='../../../../../org/puremvc/index.html'>puremvc</a><li><a class='is-perm' href='../../../../../org/puremvc/loomsdk/index.html'>loomsdk</a><li><a class='is-perm' href='../../../../../org/puremvc/loomsdk/patterns/index.html'>patterns</a><li><a class='is-perm' href='../../../../../org/puremvc/loomsdk/patterns/proxy/index.html'>proxy</a><li>Proxy
+    </ul>
+    <div id="site-header__search" class="site-header__search" data-dropdown="#results-dropdown">
+        <input type="text"><button><span class="down-arrow"></span><span class="text">Search all</span></button>
+        <div class="options">
+            <div class="options__option options__option--selected" name="search-all">Search all</div>
+        </div>
+    </div>
+    <div id="results-dropdown" class="dropdown dropdown-tip dropdown-relative">
+        <ul class="dropdown-menu">
+        </ul>
+    </div>
+</header><!-- End header. -->
+          
+          
+
+        <!-- Page. -->
+        <div class="page">
+
+            <!-- Page nav. -->
+<nav class="page-nav">
+    <h4 class="page-nav__title">Proxy</h4>
+    <ul id="page-nav__list" class="page-nav__list">
+    </ul>
+</nav><!-- End page nav. -->
+
+            <!-- Content. -->
+            <div class="content">
+
+                <!-- Content header. -->
+                <header class="content-header">
+
+                    <!-- Class name. -->
+                    <h1>Proxy</h1>
+                    
+                    
+
+                    <!-- Class categorization and path. -->
+                    <p>
+                        <strong>public class</strong>
+                        <br>
+                        <a href='../../../../../org/index.html'>org</a>.<a href='../../../../../org/puremvc/index.html'>puremvc</a>.<a href='../../../../../org/puremvc/loomsdk/index.html'>loomsdk</a>.<a href='../../../../../org/puremvc/loomsdk/patterns/index.html'>patterns</a>.<a href='../../../../../org/puremvc/loomsdk/patterns/proxy/index.html'>proxy</a>.<a href='../../../../../org/puremvc/loomsdk/patterns/proxy/Proxy.html'>Proxy</a>
+                    </p>
+                    
+                    <!-- Metadata. -->
+<div class="content-header__metadata">
+
+    <!-- Inheritance chain. -->
+    <p>
+        <span class="is-light">Inheritance</span>
+        <br>
+        
+            <a href="../../../../../org/puremvc/loomsdk/patterns/observer/Notifier.html">Notifier</a>
+        
+    </p>
+
+    <!-- Implemented interfaces. -->
+    
+    <p>
+        <span class="is-light">Implements</span>
+        <br>
+        
+            <a href="../../../../../org/puremvc/loomsdk/interfaces/IProxy.html">IProxy</a>
+        
+    </p>
+    
+
+    <!-- Subclasses. -->
+    
+
+</div><!-- End metadata. -->
+
+                </header><!-- End content header. -->
+
+                
+                    <!-- Description section. -->
+                    <section id="description" name="Description" class="content-section">
+
+                        <h2>Description</h2>
+                        <p><p>A base IProxy implementation. </p>
+
+<p>In PureMVC, Proxy classes are used to manage parts of the 
+application&#39;s data model. </p>
+
+<p>A Proxy might simply manage a reference to a local data object, 
+in which case interacting with it might involve setting and 
+getting of its data in synchronous fashion.</p>
+
+<p>Proxy classes are also used to encapsulate the application&#39;s 
+interaction with remote services to save or retrieve data, in which case, 
+we adopt an asyncronous idiom; setting data (or calling a method) on the 
+Proxy and listening for a Notification to be sent 
+when the Proxy has retrieved the data from the service. </p>
+
+<p>See also:<br>
+<a href="../../../../../org/puremvc/loomsdk/core/model/Model.html">org.puremvc.loomsdk.core.model.Model</a>   Model</p>
+</p>
+
+                    </section><!-- End description section. -->
+                
+
+                <!-- API overview section. -->
+<section id="api-overview" name="API overview" class="content-section">
+
+    <h2>API overview</h2>
+
+    <!-- Constructor. -->
+    <h3><a href="#constructor">Constructor</a></h3>
+    <p><a href="#constructor"><strong>Proxy</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  proxyName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+  <span class='is-light'>= null</span>
+  , 
+
+  
+  data: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+  <span class='is-light'>= null</span>
+   
+)
+    <br>
+    <span class="is-light">Constructor</span></p>
+
+    
+    <!-- Attributes. -->
+    <div>
+
+        <h3><a href="#attributes">Attributes</a></h3>
+
+        
+        <!-- Public attributes. -->
+        <!-- Title. -->
+        <div class="overview-box__header">
+            <h4 class="overview-box__title">Public attributes</h4>
+            
+        </div>
+        <!-- Table. -->
+        <table class="overview-box__table" id="overview-public-attributes">
+            <tbody>
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#attribute-NAME"><strong>NAME</strong></a>: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a> 
+        </td>
+        <td class="overview-box__description-col">
+            
+            <span class="special-property">static </span>
+            
+            
+            
+            
+        </td>
+    </tr>
+
+            
+            </tbody>
+        </table>
+        <!-- End public attributes. -->
+        
+
+        
+        <!-- Protected attributes. -->
+        <!-- Title. -->
+        <div class="overview-box__header--twirlable" data-twirl="#overview-protected-attributes">
+            <div class="overview-box__twirl twirl-down"></div><h4 class="overview-box__title is-inline">Protected attributes</h4>
+            
+            <div class="show-inherited-toggle" data-target="#overview-protected-attributes">
+                <div class="checkbox"></div>
+            </div>
+            
+        </div>
+        <!-- Table. -->
+        <table class="overview-box__table" id="overview-protected-attributes" style="display:none;">
+            <tbody>
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#attribute-data"><strong>data</strong></a>: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a> 
+        </td>
+        <td class="overview-box__description-col">
+            
+            
+            
+            
+            
+            
+        </td>
+    </tr>
+
+            
+                
+    <tr class="inherited" style="display:none;">
+        <td class="overview-box__name-col">
+            <span class="inherited-icon"></span><a href="#attribute-facade"><strong>facade</strong></a>: <a href='../../../../../org/puremvc/loomsdk/interfaces/IFacade.html'>IFacade</a>
+            <br>
+            <span class="is-light">Inherited from <a href="../../../../../org/puremvc/loomsdk/patterns/observer/Notifier.html">Notifier</a></span>
+        </td>
+        <td class="overview-box__description-col">
+            
+            
+            
+            
+            
+            
+        </td>
+    </tr>
+
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#attribute-proxyName"><strong>proxyName</strong></a>: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a> 
+        </td>
+        <td class="overview-box__description-col">
+            
+            
+            
+            
+            
+            
+        </td>
+    </tr>
+
+            
+            </tbody>
+        </table>
+        <!-- End protected attributes. -->
+        
+
+    </div><!-- End attributes. -->
+    
+
+    
+
+    
+    <!-- Functions. -->
+    <div>
+
+        <h3><a href="#functions">Functions</a></h3>
+
+        
+        <!-- Public functions. -->
+        <!-- Title. -->
+        <div class="overview-box__header">
+            <h4 class="overview-box__title">Public functions</h4>
+            
+            <div class="show-inherited-toggle" data-target="#overview-public-functions">
+                <div class="checkbox"></div>
+            </div>
+            
+        </div>
+        <!-- Table. -->
+        <table class="overview-box__table" id="overview-public-functions">
+            <tbody>
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#function-getData"><strong>getData</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+        </td>
+        <td class="overview-box__description-col">
+            <p>Get the data object</p>
+        </td>
+    </tr>
+
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#function-getProxyName"><strong>getProxyName</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+        </td>
+        <td class="overview-box__description-col">
+            <p>Get the proxy name</p>
+        </td>
+    </tr>
+
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#function-onRegister"><strong>onRegister</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+        </td>
+        <td class="overview-box__description-col">
+            <p>Called by the Model when the Proxy is registered</p>
+        </td>
+    </tr>
+
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#function-onRemove"><strong>onRemove</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+        </td>
+        <td class="overview-box__description-col">
+            <p>Called by the Model when the Proxy is removed</p>
+        </td>
+    </tr>
+
+            
+                
+    <tr class="inherited" style="display:none;">
+        <td class="overview-box__name-col">
+            <span class="inherited-icon"></span><a href="#function-sendNotification"><strong>sendNotification</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  notificationName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+  
+  , 
+
+  
+  body: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+  <span class='is-light'>= null</span>
+  , 
+
+  
+  type: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+  <span class='is-light'>= null</span>
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+            <br>
+            <span class="is-light">Inherited from <a href="../../../../../org/puremvc/loomsdk/patterns/observer/Notifier.html">Notifier</a></span>
+        </td>
+        <td class="overview-box__description-col">
+            <p>Create and send an INotification
+        </td>
+    </tr>
+
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#function-setData"><strong>setData</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  data: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+        </td>
+        <td class="overview-box__description-col">
+            <p>Set the data object</p>
+        </td>
+    </tr>
+
+            
+            </tbody>
+        </table>
+        <!-- End public functions. -->
+        
+
+        
+
+    </div><!-- End functions. -->
+    
+    
+    
+
+</section><!-- End API overview section. -->
+
+                <!-- Constructor section. -->
+                <section id="constructor" name="Constructor" class="content-section">
+
+                    <h2>Constructor</h2>
+
+                    <div class="content-section__inner">
+                        <p class="content-subsection"><strong>Proxy</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  proxyName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+  <span class='is-light'>= null</span>
+  , 
+
+  
+  data: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+  <span class='is-light'>= null</span>
+   
+)</p>
+                        <p>Constructor</p>
+                    </div>
+
+                </section><!-- End constructor section. -->
+
+                <!-- Attributes section. -->
+
+<section id="attributes" name="Attributes" class="content-section">
+
+    <!-- Title. -->
+    <h2>Attributes</h2>
+    
+    
+    <div class="content-section__inner">
+    
+        <!-- Public list. -->
+        
+            <div class="content-subsection" id="attribute-NAME">
+  <p><strong>NAME</strong>: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+    
+    
+  </p>
+  <p>
+    
+    <span class="special-property">static </span>
+    
+    
+    
+    </p>
+</div>
+        
+
+    </div>
+    
+
+    
+    <!-- Protected. -->
+
+    <!-- Title. -->
+    <div class="content-section__subheader" data-twirl="#protected-attributes">
+        <div class="content-section__subheader__twirl twirl-down"></div><h3 class="content-section__subheader__title">Protected attributes</h3>
+    </div>
+
+
+    <div class="content-section__inner">
+        <!-- List. -->
+        <div id="protected-attributes" class="protected-subsection__body" style="display:none;">
+            
+               <div class="content-subsection" id="attribute-data">
+  <p><strong>data</strong>: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+    
+    
+  </p>
+  <p>
+    
+    
+    
+    
+    
+    </p>
+</div>
+            
+               <div class="content-subsection" id="attribute-facade">
+  <p><span class="inherited-icon"></span><strong>facade</strong>: <a href='../../../../../org/puremvc/loomsdk/interfaces/IFacade.html'>IFacade</a>
+    
+    <br>
+    <span class="is-light">Inherited from <a href="../../../../../org/puremvc/loomsdk/patterns/observer/Notifier.html">Notifier</a></span>
+    
+    
+  </p>
+  <p>
+    
+    
+    
+    
+    
+    </p>
+</div>
+            
+               <div class="content-subsection" id="attribute-proxyName">
+  <p><strong>proxyName</strong>: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+    
+    
+  </p>
+  <p>
+    
+    
+    
+    
+    
+    </p>
+</div>
+            
+        </div>
+
+    </div><!-- End protected. -->
+    
+
+</section><!-- End attributes section. -->
+
+
+                <!-- Attributes section. -->
+
+
+                <!-- Functions section. -->
+
+<section id="functions" name="Functions" class="content-section">
+
+    <!-- Title. -->
+    <h2>Functions</h2>
+
+    
+    <div class="content-section__inner">
+
+        <!-- Public list. -->
+        
+            <div class="content-subsection" id="function-getData">
+    <p><strong>getData</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+      
+      
+    </p>
+    <p><p>Get the data object</p>
+</p>
+    
+    
+    
+    <br/>
+    
+    
+    
+    <br/>
+</div>
+        
+            <div class="content-subsection" id="function-getProxyName">
+    <p><strong>getProxyName</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+      
+      
+    </p>
+    <p><p>Get the proxy name</p>
+</p>
+    
+    
+    
+    <br/>
+    
+    
+    
+    <br/>
+</div>
+        
+            <div class="content-subsection" id="function-onRegister">
+    <p><strong>onRegister</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+      
+      
+    </p>
+    <p><p>Called by the Model when the Proxy is registered</p>
+</p>
+    
+    
+    
+    <br/>
+    
+    
+    
+    <br/>
+</div>
+        
+            <div class="content-subsection" id="function-onRemove">
+    <p><strong>onRemove</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+      
+      
+    </p>
+    <p><p>Called by the Model when the Proxy is removed</p>
+</p>
+    
+    
+    
+    <br/>
+    
+    
+    
+    <br/>
+</div>
+        
+            <div class="content-subsection" id="function-sendNotification">
+    <p><span class="inherited-icon"></span><strong>sendNotification</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  notificationName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+  
+  , 
+
+  
+  body: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+  <span class='is-light'>= null</span>
+  , 
+
+  
+  type: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+  <span class='is-light'>= null</span>
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+      
+      <br>
+      <span class="is-light">Inherited from <a href="../../../../../org/puremvc/loomsdk/patterns/observer/Notifier.html">Notifier</a></span>
+      
+      
+    </p>
+    <p><p>Create and send an INotification.</p>
+
+<p>Keeps us from having to construct new INotification 
+instances in our implementation code.</p>
+</p>
+    
+    
+      <!-- Title. -->
+      <div class="overview-box__header">
+          <h4 class="overview-box__title">Parameters</h4>
+      </div>
+      <!-- List. -->
+      <table class="overview-box__table" id="overview-returns">
+          <tbody>
+            
+              <tr>
+                <td class="overview-box__name-col">
+                    notificationName: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+                    
+                </td>
+                <td class="overview-box__description-col">
+                  the name of the notiification to send
+                </td>
+              </tr>
+            
+              <tr>
+                <td class="overview-box__name-col">
+                    body: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+                    
+                      <span class="is-light">= null</span>
+                    
+                </td>
+                <td class="overview-box__description-col">
+                  the body of the notification (optional)
+                </td>
+              </tr>
+            
+              <tr>
+                <td class="overview-box__name-col">
+                    type: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/String.html'>String</a>
+                    
+                      <span class="is-light">= null</span>
+                    
+                </td>
+                <td class="overview-box__description-col">
+                  the type of the notification (optional)
+                </td>
+              </tr>
+            
+          </tbody>
+      </table>
+    
+    
+    <br/>
+    
+    
+    
+    <br/>
+</div>
+        
+            <div class="content-subsection" id="function-setData">
+    <p><strong>setData</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  data: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+      
+      
+    </p>
+    <p><p>Set the data object</p>
+</p>
+    
+    
+      <!-- Title. -->
+      <div class="overview-box__header">
+          <h4 class="overview-box__title">Parameters</h4>
+      </div>
+      <!-- List. -->
+      <table class="overview-box__table" id="overview-returns">
+          <tbody>
+            
+              <tr>
+                <td class="overview-box__name-col">
+                    data: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+                    
+                </td>
+                <td class="overview-box__description-col">
+                  
+                </td>
+              </tr>
+            
+          </tbody>
+      </table>
+    
+    
+    <br/>
+    
+    
+    
+    <br/>
+</div>
+        
+
+    </div>
+    
+
+    
+
+</section><!-- End functions section. -->
+
+                
+                <!-- Functions section. -->
+
+
+            </div><!-- End content. -->
+
+        </div><!-- End page. -->
+
+        <script type="text/javascript" src="../../../../../js/vendor/fuse.min.js"></script>
+<script type="text/javascript" src="../../../../../js/vendor/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="../../../../../js/vendor/jquery.easing.min.js"></script>
+<script type="text/javascript" src="../../../../../js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="../../../../../js/vendor/underscore-min.js"></script>
+<script type="text/javascript" src="../../../../../js/authored/onscroll.js"></script>
+<script type="text/javascript" src="../../../../../js/authored/table-of-contents.js"></script>
+<script type="text/javascript" src="../../../../../js/authored/inherited-properties.js"></script>
+<script type="text/javascript" src="../../../../../js/authored/twirldowns.js"></script>
+<script type="text/javascript" src="../../../../../js/authored/id-link-intercept.js"></script>
+
+<script type="text/javascript">
+  $(function() {
+    $( document ).tooltip();
+  });
+  </script>
+  
+<script type="text/javascript">
+
+  var relative_base = "../../../../../..";
+  var search_objects = $.parseJSON('{"classes":[{"path":"api.org.puremvc.loomsdk.core.Controller","name":"Controller"},{"path":"api.org.puremvc.loomsdk.patterns.facade.Facade","name":"Facade"},{"path":"api.org.puremvc.loomsdk.interfaces.ICommand","name":"ICommand"},{"path":"api.org.puremvc.loomsdk.interfaces.IController","name":"IController"},{"path":"api.org.puremvc.loomsdk.interfaces.IFacade","name":"IFacade"},{"path":"api.org.puremvc.loomsdk.interfaces.IMediator","name":"IMediator"},{"path":"api.org.puremvc.loomsdk.interfaces.IModel","name":"IModel"},{"path":"api.org.puremvc.loomsdk.interfaces.INotification","name":"INotification"},{"path":"api.org.puremvc.loomsdk.interfaces.INotifier","name":"INotifier"},{"path":"api.org.puremvc.loomsdk.interfaces.IObserver","name":"IObserver"},{"path":"api.org.puremvc.loomsdk.interfaces.IProxy","name":"IProxy"},{"path":"api.org.puremvc.loomsdk.interfaces.IView","name":"IView"},{"path":"api.org.puremvc.loomsdk.patterns.command.MacroCommand","name":"MacroCommand"},{"path":"api.org.puremvc.loomsdk.patterns.mediator.Mediator","name":"Mediator"},{"path":"api.org.puremvc.loomsdk.core.Model","name":"Model"},{"path":"api.org.puremvc.loomsdk.patterns.observer.Notification","name":"Notification"},{"path":"api.org.puremvc.loomsdk.patterns.observer.Notifier","name":"Notifier"},{"path":"api.org.puremvc.loomsdk.patterns.observer.Observer","name":"Observer"},{"path":"api.org.puremvc.loomsdk.patterns.proxy.Proxy","name":"Proxy"},{"path":"api.org.puremvc.loomsdk.patterns.command.SimpleCommand","name":"SimpleCommand"},{"path":"api.org.puremvc.loomsdk.core.View","name":"View"}],"examples":[],"guides":[]}');
+
+	var sidebarData = [
+	    { "name" : "Guides", "link" : [] },
+	    { "name" : "Examples", "link" : [] },
+	    { "name" : "API reference", "link" : "../../../../../index.html" }
+	];
+
+  // populate examples links
+	for(var index in search_objects.examples)
+	{
+	  example = search_objects.examples[index]
+	  sidebarData[1].link.push({"name": example.name, "link": relative_base + "/" + example.path.split(".").join("/") + ".html"});
+	}
+	
+	// populate guides links
+	sidebarData[0].link = $.parseJSON('[]');
+	
+</script>
+
+
+<script type="text/javascript" src="../../../../../js/vendor/jquery.dropdown.js"></script>
+<script type="text/javascript" src="../../../../../js/authored/search.js"></script>    
+    </body>
+</html>

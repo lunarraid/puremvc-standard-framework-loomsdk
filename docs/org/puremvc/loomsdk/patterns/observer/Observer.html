@@ -1,0 +1,554 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Loom SDK: Observer Class Reference</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="../../../../../css/class-page.css">
+        <link rel="stylesheet" href="../../../../../css/pygments.css">
+        <link rel="stylesheet" href="../../../../../css/all-pages.css">
+        <link rel="stylesheet" href="../../../../../css/jquery-ui-1.10.3.custom.css" />
+        <link type="text/css" rel="stylesheet" href="../../../../../css/jquery.dropdown.css" />
+    </head>
+    <body>
+
+        <div id="top">&nbsp;</div>
+        <!-- Header. -->
+<header class="site-header">
+    <div class="site-header__logo">
+        <div class="site-header__logo__version">1.0.1</div>
+    </div>
+    <ul class="site-header__nav breadcrumb">
+          <li><a class='is-perm' href='../../../../../index.html'>API Reference</a><li><a class='is-perm' href='../../../../../org/index.html'>org</a><li><a class='is-perm' href='../../../../../org/puremvc/index.html'>puremvc</a><li><a class='is-perm' href='../../../../../org/puremvc/loomsdk/index.html'>loomsdk</a><li><a class='is-perm' href='../../../../../org/puremvc/loomsdk/patterns/index.html'>patterns</a><li><a class='is-perm' href='../../../../../org/puremvc/loomsdk/patterns/observer/index.html'>observer</a><li>Observer
+    </ul>
+    <div id="site-header__search" class="site-header__search" data-dropdown="#results-dropdown">
+        <input type="text"><button><span class="down-arrow"></span><span class="text">Search all</span></button>
+        <div class="options">
+            <div class="options__option options__option--selected" name="search-all">Search all</div>
+        </div>
+    </div>
+    <div id="results-dropdown" class="dropdown dropdown-tip dropdown-relative">
+        <ul class="dropdown-menu">
+        </ul>
+    </div>
+</header><!-- End header. -->
+          
+          
+
+        <!-- Page. -->
+        <div class="page">
+
+            <!-- Page nav. -->
+<nav class="page-nav">
+    <h4 class="page-nav__title">Observer</h4>
+    <ul id="page-nav__list" class="page-nav__list">
+    </ul>
+</nav><!-- End page nav. -->
+
+            <!-- Content. -->
+            <div class="content">
+
+                <!-- Content header. -->
+                <header class="content-header">
+
+                    <!-- Class name. -->
+                    <h1>Observer</h1>
+                    
+                    
+
+                    <!-- Class categorization and path. -->
+                    <p>
+                        <strong>public class</strong>
+                        <br>
+                        <a href='../../../../../org/index.html'>org</a>.<a href='../../../../../org/puremvc/index.html'>puremvc</a>.<a href='../../../../../org/puremvc/loomsdk/index.html'>loomsdk</a>.<a href='../../../../../org/puremvc/loomsdk/patterns/index.html'>patterns</a>.<a href='../../../../../org/puremvc/loomsdk/patterns/observer/index.html'>observer</a>.<a href='../../../../../org/puremvc/loomsdk/patterns/observer/Observer.html'>Observer</a>
+                    </p>
+                    
+                    <!-- Metadata. -->
+<div class="content-header__metadata">
+
+    <!-- Inheritance chain. -->
+    <p>
+        <span class="is-light">Inheritance</span>
+        <br>
+        
+    </p>
+
+    <!-- Implemented interfaces. -->
+    
+    <p>
+        <span class="is-light">Implements</span>
+        <br>
+        
+            <a href="../../../../../org/puremvc/loomsdk/interfaces/IObserver.html">IObserver</a>
+        
+    </p>
+    
+
+    <!-- Subclasses. -->
+    
+
+</div><!-- End metadata. -->
+
+                </header><!-- End content header. -->
+
+                
+                    <!-- Description section. -->
+                    <section id="description" name="Description" class="content-section">
+
+                        <h2>Description</h2>
+                        <p><p>A base IObserver implementation.</p>
+
+<p>An Observer is an object that encapsulates information
+about an interested object with a method that should 
+be called when a particular INotification is broadcast. </p>
+
+<p>In PureMVC, the Observer class assumes these responsibilities:
+
+Encapsulate the notification (callback) method of the interested object.
+Encapsulate the notification context (this) of the interested object.
+Provide methods for setting the notification method and context.
+Provide a method for notifying the interested object.
+</p>
+
+<p>See also:<br>
+<a href="../../../../../org/puremvc/loomsdk/core/view/View.html">org.puremvc.loomsdk.core.view.View</a>   View
+<a href="../../../../../org/puremvc/loomsdk/patterns/observer/Notification.html">org.puremvc.loomsdk.patterns.observer.Notification</a>   Notification</p>
+</p>
+
+                    </section><!-- End description section. -->
+                
+
+                <!-- API overview section. -->
+<section id="api-overview" name="API overview" class="content-section">
+
+    <h2>API overview</h2>
+
+    <!-- Constructor. -->
+    <h3><a href="#constructor">Constructor</a></h3>
+    <p><a href="#constructor"><strong>Observer</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  notifyMethod: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Function.html'>Function</a>
+  
+  , 
+
+  
+  notifyContext: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+  
+   
+)
+    <br>
+    <span class="is-light">Constructor</span></p>
+
+    
+
+    
+
+    
+    <!-- Functions. -->
+    <div>
+
+        <h3><a href="#functions">Functions</a></h3>
+
+        
+        <!-- Public functions. -->
+        <!-- Title. -->
+        <div class="overview-box__header">
+            <h4 class="overview-box__title">Public functions</h4>
+            
+        </div>
+        <!-- Table. -->
+        <table class="overview-box__table" id="overview-public-functions">
+            <tbody>
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#function-compareNotifyContext"><strong>compareNotifyContext</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  object: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Boolean.html'>Boolean</a>
+        </td>
+        <td class="overview-box__description-col">
+            <p>Compare an object to the notification context
+        </td>
+    </tr>
+
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#function-notifyObserver"><strong>notifyObserver</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  notification: <a href='../../../../../org/puremvc/loomsdk/interfaces/INotification.html'>INotification</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+        </td>
+        <td class="overview-box__description-col">
+            <p>Notify the interested object
+        </td>
+    </tr>
+
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#function-setNotifyContext"><strong>setNotifyContext</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  notifyContext: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+        </td>
+        <td class="overview-box__description-col">
+            <p>Set the notification context
+        </td>
+    </tr>
+
+            
+                
+    <tr>
+        <td class="overview-box__name-col">
+            <a href="#function-setNotifyMethod"><strong>setNotifyMethod</strong></a><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  notifyMethod: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Function.html'>Function</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+        </td>
+        <td class="overview-box__description-col">
+            <p>Set the notification method
+        </td>
+    </tr>
+
+            
+            </tbody>
+        </table>
+        <!-- End public functions. -->
+        
+
+        
+
+    </div><!-- End functions. -->
+    
+    
+    
+
+</section><!-- End API overview section. -->
+
+                <!-- Constructor section. -->
+                <section id="constructor" name="Constructor" class="content-section">
+
+                    <h2>Constructor</h2>
+
+                    <div class="content-section__inner">
+                        <p class="content-subsection"><strong>Observer</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  notifyMethod: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Function.html'>Function</a>
+  
+  , 
+
+  
+  notifyContext: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+  
+   
+)</p>
+                        <p>Constructor. 
+
+<P>
+The notification method on the interested object should take 
+one parameter of type <code>INotification</code></P>
+
+@param notifyMethod the notification method of the interested object
+@param notifyContext the notification context of the interested object</p>
+                    </div>
+
+                </section><!-- End constructor section. -->
+
+                <!-- Attributes section. -->
+
+
+                <!-- Attributes section. -->
+
+
+                <!-- Functions section. -->
+
+<section id="functions" name="Functions" class="content-section">
+
+    <!-- Title. -->
+    <h2>Functions</h2>
+
+    
+    <div class="content-section__inner">
+
+        <!-- Public list. -->
+        
+            <div class="content-subsection" id="function-compareNotifyContext">
+    <p><strong>compareNotifyContext</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  object: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Boolean.html'>Boolean</a>
+      
+      
+    </p>
+    <p><p>Compare an object to the notification context. </p>
+</p>
+    
+    
+      <!-- Title. -->
+      <div class="overview-box__header">
+          <h4 class="overview-box__title">Parameters</h4>
+      </div>
+      <!-- List. -->
+      <table class="overview-box__table" id="overview-returns">
+          <tbody>
+            
+              <tr>
+                <td class="overview-box__name-col">
+                    object: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+                    
+                </td>
+                <td class="overview-box__description-col">
+                  the object to compare
+                </td>
+              </tr>
+            
+          </tbody>
+      </table>
+    
+    
+    <br/>
+    
+    
+      <!-- Title. -->
+      <div class="overview-box__header">
+          <h4 class="overview-box__title">Returns</h4>
+      </div>
+      <!-- List. -->
+      <table class="overview-box__table" id="overview-returns">
+          <tbody>
+            <tr>
+              <td class="overview-box__name-col">
+                  <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Boolean.html'><strong>Boolean</strong></a>
+              </td>
+              <td class="overview-box__description-col">
+                boolean indicating if the object and the notification context are the same
+              </td>
+            </tr>
+          </tbody>
+      </table>
+    
+    
+    <br/>
+</div>
+        
+            <div class="content-subsection" id="function-notifyObserver">
+    <p><strong>notifyObserver</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  notification: <a href='../../../../../org/puremvc/loomsdk/interfaces/INotification.html'>INotification</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+      
+      
+    </p>
+    <p><p>Notify the interested object.</p>
+</p>
+    
+    
+      <!-- Title. -->
+      <div class="overview-box__header">
+          <h4 class="overview-box__title">Parameters</h4>
+      </div>
+      <!-- List. -->
+      <table class="overview-box__table" id="overview-returns">
+          <tbody>
+            
+              <tr>
+                <td class="overview-box__name-col">
+                    notification: <a href='../../../../../org/puremvc/loomsdk/interfaces/INotification.html'>INotification</a>
+                    
+                </td>
+                <td class="overview-box__description-col">
+                  the <code>INotification</code> to pass to the interested object's notification method.
+                </td>
+              </tr>
+            
+          </tbody>
+      </table>
+    
+    
+    <br/>
+    
+    
+    
+    <br/>
+</div>
+        
+            <div class="content-subsection" id="function-setNotifyContext">
+    <p><strong>setNotifyContext</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  notifyContext: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+      
+      
+    </p>
+    <p><p>Set the notification context.</p>
+</p>
+    
+    
+      <!-- Title. -->
+      <div class="overview-box__header">
+          <h4 class="overview-box__title">Parameters</h4>
+      </div>
+      <!-- List. -->
+      <table class="overview-box__table" id="overview-returns">
+          <tbody>
+            
+              <tr>
+                <td class="overview-box__name-col">
+                    notifyContext: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Object.html'>Object</a>
+                    
+                </td>
+                <td class="overview-box__description-col">
+                  the notification context (this) of the interested object.
+                </td>
+              </tr>
+            
+          </tbody>
+      </table>
+    
+    
+    <br/>
+    
+    
+    
+    <br/>
+</div>
+        
+            <div class="content-subsection" id="function-setNotifyMethod">
+    <p><strong>setNotifyMethod</strong><!-- Note: this will all end up on one line, but it is much easier to read this way -->
+(
+   
+  notifyMethod: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Function.html'>Function</a>
+  
+   
+): <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Void.html'>Void</a>
+      
+      
+    </p>
+    <p><p>Set the notification method.</p>
+
+<p>The notification method should take one parameter of type INotification.</p>
+</p>
+    
+    
+      <!-- Title. -->
+      <div class="overview-box__header">
+          <h4 class="overview-box__title">Parameters</h4>
+      </div>
+      <!-- List. -->
+      <table class="overview-box__table" id="overview-returns">
+          <tbody>
+            
+              <tr>
+                <td class="overview-box__name-col">
+                    notifyMethod: <a href='http://docs.theengine.co/loom/1.1.2738/api/system/Function.html'>Function</a>
+                    
+                </td>
+                <td class="overview-box__description-col">
+                  the notification (callback) method of the interested object.
+                </td>
+              </tr>
+            
+          </tbody>
+      </table>
+    
+    
+    <br/>
+    
+    
+    
+    <br/>
+</div>
+        
+
+    </div>
+    
+
+    
+
+</section><!-- End functions section. -->
+
+                
+                <!-- Functions section. -->
+
+
+            </div><!-- End content. -->
+
+        </div><!-- End page. -->
+
+        <script type="text/javascript" src="../../../../../js/vendor/fuse.min.js"></script>
+<script type="text/javascript" src="../../../../../js/vendor/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="../../../../../js/vendor/jquery.easing.min.js"></script>
+<script type="text/javascript" src="../../../../../js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="../../../../../js/vendor/underscore-min.js"></script>
+<script type="text/javascript" src="../../../../../js/authored/onscroll.js"></script>
+<script type="text/javascript" src="../../../../../js/authored/table-of-contents.js"></script>
+<script type="text/javascript" src="../../../../../js/authored/inherited-properties.js"></script>
+<script type="text/javascript" src="../../../../../js/authored/twirldowns.js"></script>
+<script type="text/javascript" src="../../../../../js/authored/id-link-intercept.js"></script>
+
+<script type="text/javascript">
+  $(function() {
+    $( document ).tooltip();
+  });
+  </script>
+  
+<script type="text/javascript">
+
+  var relative_base = "../../../../../..";
+  var search_objects = $.parseJSON('{"classes":[{"path":"api.org.puremvc.loomsdk.core.Controller","name":"Controller"},{"path":"api.org.puremvc.loomsdk.patterns.facade.Facade","name":"Facade"},{"path":"api.org.puremvc.loomsdk.interfaces.ICommand","name":"ICommand"},{"path":"api.org.puremvc.loomsdk.interfaces.IController","name":"IController"},{"path":"api.org.puremvc.loomsdk.interfaces.IFacade","name":"IFacade"},{"path":"api.org.puremvc.loomsdk.interfaces.IMediator","name":"IMediator"},{"path":"api.org.puremvc.loomsdk.interfaces.IModel","name":"IModel"},{"path":"api.org.puremvc.loomsdk.interfaces.INotification","name":"INotification"},{"path":"api.org.puremvc.loomsdk.interfaces.INotifier","name":"INotifier"},{"path":"api.org.puremvc.loomsdk.interfaces.IObserver","name":"IObserver"},{"path":"api.org.puremvc.loomsdk.interfaces.IProxy","name":"IProxy"},{"path":"api.org.puremvc.loomsdk.interfaces.IView","name":"IView"},{"path":"api.org.puremvc.loomsdk.patterns.command.MacroCommand","name":"MacroCommand"},{"path":"api.org.puremvc.loomsdk.patterns.mediator.Mediator","name":"Mediator"},{"path":"api.org.puremvc.loomsdk.core.Model","name":"Model"},{"path":"api.org.puremvc.loomsdk.patterns.observer.Notification","name":"Notification"},{"path":"api.org.puremvc.loomsdk.patterns.observer.Notifier","name":"Notifier"},{"path":"api.org.puremvc.loomsdk.patterns.observer.Observer","name":"Observer"},{"path":"api.org.puremvc.loomsdk.patterns.proxy.Proxy","name":"Proxy"},{"path":"api.org.puremvc.loomsdk.patterns.command.SimpleCommand","name":"SimpleCommand"},{"path":"api.org.puremvc.loomsdk.core.View","name":"View"}],"examples":[],"guides":[]}');
+
+	var sidebarData = [
+	    { "name" : "Guides", "link" : [] },
+	    { "name" : "Examples", "link" : [] },
+	    { "name" : "API reference", "link" : "../../../../../index.html" }
+	];
+
+  // populate examples links
+	for(var index in search_objects.examples)
+	{
+	  example = search_objects.examples[index]
+	  sidebarData[1].link.push({"name": example.name, "link": relative_base + "/" + example.path.split(".").join("/") + ".html"});
+	}
+	
+	// populate guides links
+	sidebarData[0].link = $.parseJSON('[]');
+	
+</script>
+
+
+<script type="text/javascript" src="../../../../../js/vendor/jquery.dropdown.js"></script>
+<script type="text/javascript" src="../../../../../js/authored/search.js"></script>    
+    </body>
+</html>
