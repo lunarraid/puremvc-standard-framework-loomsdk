@@ -1,6 +1,8 @@
 ## [PureMVC](http://puremvc.github.com/) Standard Framework For [LoomSDK](http://www.loomsdk.com/)
 PureMVC is a lightweight framework for creating applications based upon the classic [Model-View-Controller](http://en.wikipedia.org/wiki/Model-view-controller) design meta-pattern. This is the specific implementation for the LoomSDK, and the reference implementation for [all other PureMVC Ports](http://puremvc.github.com/). It does not support [modular programming](http://en.wikipedia.org/wiki/Modular_programming) since it uses [Singleton](http://en.wikipedia.org/wiki/Singleton_pattern)s as Core actors.
 
+[API Documentation](http://lunarraid.github.io/puremvc-standard-framework-loomsdk/)
+
 
 ## License
 * LoomSDK port modifications © 2013 Raymond Cook
